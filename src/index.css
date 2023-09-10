@@ -1,0 +1,680 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #090E16;
+  color: #FFF;
+  font-family: 'Raleway', sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+#root {
+  scroll-snap-type: y mandatory;
+}
+.navbar {
+  width: 80vw;
+
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: rgba(123, 74, 226, 0.05);
+  display: flex;
+  justify-content: space-between;
+  margin: 15px auto;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.225);
+}
+
+.logo-nav p {
+  margin: 0 20px;
+}
+
+.items-nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.items-nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.items-nav ul li {
+  margin: 0 20px;
+}
+.items-nav ul li:hover{
+  color: #d3c1fba9;
+  transition: all 0.2s ease-in-out;
+}
+
+.h-home {
+  padding: 10% 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.saludos-child-nombre {
+  display: flex;
+  flex-direction: column;
+}
+
+.saludos-p {
+  width: 160px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: rgba(123, 74, 226, 0.10);
+  color: #7B4AE2;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  width: 140px;
+  height: 36px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.134);
+}
+
+
+.h2-nombre {
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 0px;
+}
+
+.description-job {
+  color: rgba(255, 255, 255, 0.50);
+  text-align: justify;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.presentacion-imagen-home {
+  margin-bottom: 100px;
+  border-radius: 50%;
+  background: rgba(122, 74, 226, 0.201);
+  width: 400px;
+  flex-shrink: 0;
+  overflow: hidden;
+  box-shadow: 49px 30px 62px 0px rgba(0, 0, 0, 0.059);
+}
+
+.presentacion-imagen-home img {
+  width: 100%;
+  height: auto;
+  filter: none !important;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.presentacion-cv-home {
+  border-radius: 16px;
+  border: 1px solid rgba(123, 74, 226, 0.50);
+  width: 96px;
+  height: 44px;
+  flex-shrink: 0;
+  text-align: center;
+  color: #522ea0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.presentacion-cv-home:hover {
+  background-color: #7B4AE2;
+  color: #e9e9e9;
+  box-shadow: 0 9px 10px rgba(0, 0, 0, 0.399);
+  transition: all 1s ease-in-out;
+}
+
+.red-sociales i {
+  margin: 5px 8px;
+  color: #a8aaad;
+}
+
+#sobremi {
+  scroll-snap-align: start;
+}
+.sobre-mi {
+  padding: 17vh 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sobre-mi-imagenDiv {
+  border-radius: 227px;
+  position: relative;
+
+}
+
+.sobre-mi-imagenDiv::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(mifoto.png) rgba(211, 211, 211, 0) 50% / cover no-repeat;
+  border-radius: 200px;
+  z-index: 1;
+
+}
+
+.sobre-mi-imagenDiv svg {
+  width: 460px;
+  height: 460px;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 0;
+}
+
+.sobre-mi-descripcion {
+  width: 50%;
+}
+
+.sobre-mi-descripcion p {
+  color: rgba(255, 255, 255, 0.50);
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.sobre-mi-descripcion h2 {
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.sobre-mi-descripcion p span {
+  color: rgb(255, 255, 255);
+}
+
+.proyectos {
+  padding: 20vh 4vw;
+}
+
+.pro-title h2 {
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+
+
+.cards-proyectos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.tecnologias-card {
+  display: flex;
+}
+
+.tecnologia-item {
+  background-color: rgba(123, 74, 226, 0.10);
+  margin: 5px;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* cards */
+.cards {
+  width: 360px;
+  height: 460px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: 1px solid rgba(123, 74, 226, 0.50);
+  padding: 20px;
+  margin: 20px 0;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.cards:hover {
+  transform: scale(1.05);
+  /* Aumentar el tamaño de la tarjeta al 105% del tamaño original */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: rgba(123, 74, 226, 0.50);
+}
+
+.title-description-card h5 {
+  display: flex;
+  width: 168.137px;
+  height: 25.119px;
+  transform: rotate(-0.033deg);
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.title-description-card p {
+  width: 299.777px;
+  height: 100px;
+  transform: rotate(-0.033deg);
+  flex-shrink: 0;
+  color: rgba(255, 255, 255, 0.50);
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.code-link {
+  text-align: right;
+  transition: all 0.3s ease-in-out;
+  
+}
+.code-link i {
+  margin: 0 7px;
+}
+.code-link i:hover {
+  color: #a8aaad;
+}
+
+
+
+.tecnologias-card .tecnologia-item {
+  display: flex;
+  width: 67px;
+  height: 20px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #7B4AE2;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.imagen-card {
+  width: 100%;
+  height: 200px;
+  fill: #7b4ae280;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.skills-carousel {
+  display: flex;
+  flex-wrap: wrap;
+  /* Permite que los elementos se reposicionen en una columna */
+  justify-content: center;
+  gap: 20px;
+  /* Espacio entre los íconos */
+  width: 100%;
+  /* Ancho del 100% para ajustar al contenedor */
+}
+
+.skill-icon {
+  height: 100%;
+  object-fit: contain;
+}
+
+.skill-icon-container {
+  width: 64px;
+  /* Ancho máximo de los íconos */
+  aspect-ratio: 16 / 9;
+  fill: #7a4ae2cb;
+  fill-opacity: 0.5;
+  margin-right: 20px;
+  /* Espacio entre los íconos en la columna */
+}
+
+.skill-icon-container i {
+  color: hsla(259, 72%, 59%, 0.5);
+  aspect-ratio: 16 / 9;
+  font-size: 40px;
+}
+
+.skills h3 {
+  color: rgba(255, 255, 255, 0.50);
+  margin: 30px;
+}
+
+.carrera-div {
+  margin: 0 0 30vh 0  ;
+}
+
+
+.contenido-carrera {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.profesional-Academica {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.boton-profesional,
+.boton-academica {
+  background-color: #7a4ae2eb;
+  /* Color de fondo */
+  color: #fff;
+  /* Color del texto */
+  border: none;
+  /* Quita el borde */
+  padding: 10px 20px;
+  /* Espaciado interno (arriba/abajo, izquierda/derecha) */
+  margin: 0 10px;
+  /* Margen horizontal entre los botones */
+  border-radius: 5px;
+  /* Borde redondeado */
+  cursor: pointer;
+  /* Cambia el cursor al pasar el ratón por encima */
+}
+
+.boton-profesional:hover,
+.boton-academica:hover {
+  background-color: #5a3b9ecb;
+  /* Cambia el color de fondo al pasar el ratón por encima */
+}
+
+/* Estilo adicional para el texto dentro de los botones (opcional) */
+.boton-profesional h3,
+.boton-academica h3 {
+  margin: 0;
+  font-size: 18px;
+  /* Tamaño de fuente */
+}
+
+.boton-profesional.activo {
+  border-color: #7a4ae2c8;
+  background-color: transparent;
+}
+
+/* Estilo cuando el botón Académica está activo */
+.boton-academica.activo {
+  border-color: #7a4ae2c8;
+  background-color: transparent;
+}
+
+.h2-trayectoria {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.carrera-pop {
+  margin: auto;
+}
+
+.CarrerCard {
+  width: 580px;
+  height: 220px;
+  border: 1px solid rgba(123, 74, 226, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+  /* Margen interno en lugar de margen externo */
+  margin: 10px;
+}
+
+.text-carrerCard h4 {
+  color: #7B4AE2;
+  /* Cambia el color del título para que sea más legible */
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  /* Añade un margen inferior para separar el título del párrafo */
+}
+
+.text-carrerCard p {
+  color: #d7d7d7;
+  /* Cambia el color del texto para que sea más legible */
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.date-card {
+  display: flex;
+  justify-content: space-around;
+  /* Centra las fechas verticalmente */
+  margin-top: 10px;
+  /* Añade un margen superior para separar las fechas del contenido anterior */
+}
+
+.date-card span {
+  color: #7B4AE2;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 10px;
+}
+
+
+
+.contactoSection i {
+  margin: 3px;
+}
+
+/* Estilo para la sección de contacto */
+.contactoSection {
+  background-color: #16274191;
+  
+  /* Cambia el color de fondo a tu elección */
+}
+
+/* Estilo para el título de la sección */
+.section-title {
+  color: #fff;
+  /* Cambia el color del texto a tu elección */
+}
+
+/* Estilo para el formulario */
+.contact-form {
+  padding: 20px;
+  background-color: #fff;
+  /* Cambia el color de fondo del formulario a tu elección */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para los elementos del formulario */
+.form-label {
+  font-weight: bold;
+}
+
+/* Estilo para el botón de enviar */
+.btn-primary {
+  background-color: #007bff;
+  /* Cambia el color de fondo del botón a tu elección */
+  color: #fff;
+  /* Cambia el color del texto del botón a tu elección */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  /* Cambia el color de fondo del botón al pasar el mouse */
+}
+
+/* Estilo para los elementos de contacto */
+.list-unstyled li {
+  margin-bottom: 10px;
+}
+
+/* Estilo para el enlace de Descargar mi CV */
+.btn-secondary {
+  background-color: #6c757d;
+  /* Cambia el color de fondo del botón a tu elección */
+  color: #fff;
+  /* Cambia el color del texto del botón a tu elección */
+}
+
+.btn-secondary:hover {
+  background-color: #545b62;
+  /* Cambia el color de fondo del botón al pasar el mouse */
+}
+
+
+/* TABLETS */
+
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .h-home {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-basis: auto;
+  }
+
+  .h-home .saludos-child-nombre {
+    display: flex;
+
+    margin: 50px 0 50px 20px;
+  }
+
+  .presentacion-cv-home {
+    order: -1;
+  }
+
+  .sobre-mi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centra verticalmente en dispositivos móviles */
+    text-align: center;
+    /* Centra el texto */
+  }
+  .presentacion-imagen-home{
+    width: 300px;
+  }
+
+  .sobre-mi-imagenDiv {
+
+    width: 100%;
+    /* Ocupa el ancho completo del contenedor padre */
+    padding-top: 80%;
+    /* Crea un contenedor cuadrado */
+    background: url(mifoto.png) rgba(211, 211, 211, 0.753) 50% / cover no-repeat;
+    border-radius: 10%;
+    max-width: 350px;
+    /* Limita el ancho máximo en pantallas grandes */
+    margin-bottom: 20px;
+  }
+
+  .sobre-mi-imagenDiv svg {
+    display: none;
+  }
+
+  .sobre-mi-descripcion {
+    max-width: 350px;
+    width: 100%;
+    margin: 30px 0;
+  }
+
+  .top-sobremi-emoji {
+    margin: 10px 0;
+  }
+  .skills span {
+    margin: 30px 0;
+  }
+  .skills h3 {
+    margin: 10px 0 5px 0;
+  }
+  .skill-icon-container{
+    margin: 30px 2px;
+  }
+  .CarrerCard {
+    height: 300px;
+  }
+
+}
+
+.footer {
+  background-color: #522ea049; /* Color de fondo del footer */
+  color: #fff; /* Color del texto */
+  padding: 20px 0; /* Espaciado interior (arriba y abajo) */
+  text-align: center; /* Alineación del texto en el centro */
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Estilos para los iconos de redes sociales */
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px; /* Espacio entre los iconos */
+}
+
+/* Estilos para los iconos de redes sociales */
+.social-icons a {
+  text-decoration: none;
+  color: #fff; /* Color de los iconos de redes sociales */
+  font-size: 24px; /* Tamaño de los iconos de redes sociales */
+}
+
+/* Estilos para los iconos de redes sociales al pasar el mouse */
+.social-icons a:hover {
+  color: #007bff; /* Cambia el color al pasar el mouse */
+}
