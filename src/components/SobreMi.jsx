@@ -3,10 +3,8 @@ export const SobreMi = () => {
         <>
             <div className="sobre-mi" id="sobremi">
 
-                <div className="sobre-mi-imagenDiv" >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="360" height="360" viewBox="0 0 460 460" fill="none">
-                        <path d="M460 230C460 102.974 357.026 0 230 0C102.975 0 0 102.974 0 230C0 357.025 102.975 460 230 460C357.026 460 460 357.025 460 230Z" fill="white" />
-                    </svg>
+                <div className="sobre-mi-imagenDiv">
+                    <img src="fotomia.png" alt="Tu imagen" className="img-fluid rounded-circle" />
                 </div>
                 <div className="sobre-mi-descripcion">
                     <div className="top-sobremi-emoji saludos-p">

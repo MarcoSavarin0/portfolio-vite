@@ -6,7 +6,7 @@ import { Skills } from "./components/Skills"
 import { Carrera } from "./components/Carrera"
 import { Contacto } from "./components/Contacto"
 import { Footer } from "./components/Footer/Footer"
-
+import { BotonUp } from "./components/BotonUp/BotonUp"
 function App() {
   return (
     <>
@@ -14,6 +14,7 @@ function App() {
         <Header/>
         <SobreMi/>
         <Proyectos/>
+        <BotonUp/>
         <Skills/>
         <Carrera/>
         <Contacto/>

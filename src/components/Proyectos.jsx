@@ -17,7 +17,6 @@ export const Proyectos = () => {
                     <Card title='Historias Clinicas' descripcion='Es un proyecto que realice para mi Madre, para que pueda ingresar todos los datos de sus pacientes y poder seguir su historia clinicas' tecnologia='MySql' tecnologia2='Node.js' img='hc1.png' linkgit='https://github.com/MarcoSavarin0/app-weather' />
                     <Card title='DevMinds' descripcion='Emprendimiento/empresa con unos amigos de desarrollo de paginas web, soluciones TI, entre otros servicios' tecnologia='HTML' tecnologia2='CSS' img='devminds.png' linkgit='https://github.com/MarcoSavarin0/app-weather' link='https://devminds.me'/>
                     <Card title='Portfolio' descripcion='Esta pagina web!' tecnologia='React' tecnologia2='Vite' img='portfolio.png' linkgit='https://github.com/MarcoSavarin0/portfolio-vite.git' />
-
                 </div>
             </div>
 
